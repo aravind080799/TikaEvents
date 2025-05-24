@@ -30,12 +30,33 @@
       justify-content: center;
       text-align: center;
       padding: 0 20px;
+      flex-direction: column;
     }
 
     .herotxt {
       font-size: 3rem;
       color: gray;
       line-height: 1.3;
+    }
+
+    .weekend-msg {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #009688;
+      font-weight: 500;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .cute-note {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #444;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 1024px) {
@@ -47,6 +68,10 @@
       .herotxt {
         font-size: 2.5rem;
       }
+
+      .weekend-msg {
+        font-size: 1.3rem;
+      }
     }
 
     @media (max-width: 600px) {
@@ -57,6 +82,10 @@
 
       .herotxt {
         font-size: 2rem;
+      }
+
+      .weekend-msg {
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -71,6 +100,8 @@
         A<span style="color: teal;">bout</span><br>
         Your <span style="color: teal;">Health</span>
       </h1>
+      <div class="weekend-msg">🌸 Happy Weekend! 🌿</div>
+      <div class="cute-note">Take time to rest, smile a little more, and let joy bloom in your heart. 💖</div>
     </div>
   </div>
 
